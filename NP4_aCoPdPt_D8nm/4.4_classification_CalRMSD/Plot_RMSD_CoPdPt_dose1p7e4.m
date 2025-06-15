@@ -76,3 +76,6 @@ ylabel('Number of atoms')
 ylim([0,400])
 
 set(gca,'FontSize',11,'FontName', 'Arial','linewidth',1.0);
+
+print('-dbmp', '-r1200', 'Fig_3e.bmp');
+print('-djpeg', '-r1200', 'Fig_3e.jpg');
