@@ -62,7 +62,7 @@ xlabel(['Deviation (',char(197),')'])
 ylabel('Number of atoms')
 set(gca,'FontSize',10,'FontName', 'Arial','linewidth',1.0);
 
-
-
+%%
+print('-dbmp', '-r600', 'Fig_2f.bmp');
 
 

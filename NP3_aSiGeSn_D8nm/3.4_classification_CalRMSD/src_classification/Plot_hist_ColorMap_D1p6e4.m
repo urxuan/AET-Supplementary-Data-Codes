@@ -92,4 +92,7 @@ ylim([0 y_up*yscale]);
 %xlim([0 max(sum(box_inten_plot,1))*1.05]);
 %xlim([0 max(sum(box_inten_plot,1))*0.9]);
 xlim([0 max(sum(box_inten_plot,1))*xscale]);
+
+print('-dbmp', '-r600', 'Fig_2d.bmp');
+
 end
