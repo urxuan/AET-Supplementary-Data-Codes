@@ -41,7 +41,7 @@ xxi = xxi(ov:end); yyi = yyi(ov:end); zzi = zzi(ov:end);
 
 FinalVol_tracing=single(FinalVol_tracing);
 FinalVol_tracing_interp     = interp3(Y,X,Z,FinalVol_tracing,Yi,Xi,Zi,'spline',0);
-FinalVol    = My_paddzero(FinalVol_tracing_interp,size(FinalVol_tracing_interp)+20);% FinalVol_tracing_interp; % My_paddzero(FinalVol_tracing_interp,size(FinalVol_tracing_interp)+20);
+FinalVol    = My_paddzero(FinalVol_tracing_interp,size(FinalVol_tracing_interp)+20);% 
 
 FinalVol=single(FinalVol);
 save(sprintf('%s_ov3.mat',Rec_ourput_prefix),'FinalVol','-v7.3');
